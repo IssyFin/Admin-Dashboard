@@ -1,0 +1,197 @@
+<!--Design notes:
+News is broken into 2 rows: Announcements (2 rows for announcementTitle and announcementCards) and Feedback (feedbackTitle and feedbackCards)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logoIcon">
+                <span><img src="icons/home.svg" alt="Dashboard logo"></span>
+            </div>
+            <div class="logoText">
+                Dashboard
+            </div>
+        </div>
+        <div class="navigation">
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/home-icon.svg" alt="Home icon"></span><span class="navigationText">Home</span></div></a>
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/user.svg" alt="Profile icon"></span><span class="navigationText">Profile</span></div></a>
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/mail.svg" alt="Messages icon"></span><span class="navigationText">Messages</span></div></a>
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/clock.svg" alt="History icon"></span><span class="navigationText">History</span></div></a>
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/edit.svg" alt="Tasks icon"></span><span class="navigationText">Tasks</span></div></a>
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/smile.svg" alt="Communities icon"></span ><span class="navigationText">Communities</span></div></a>
+            <div class="navigationCard"></div>
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/settings.svg" alt="Settings icon"></span><span class="navigationText">Settings</span></div></a>
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/help-circle.svg" alt="Support icon"></span><span class="navigationText">Support</span></div></a>
+            <a><div class="navigationCard"><span class="navigationIcon"><img src="icons/shield.svg" alt="Privacy icon"></span><span class="navigationText">Privacy</span></div></a>
+            <!--Add link buttons for navigation here-->
+        </div>
+    </div>
+    <div class="main">
+        <div class="search">
+            <div class="searchBlock">
+                <!-- <span class="searchIcon"><img src="icons/search.svg" alt="Search icon"></span> -->
+                <img class="searchIcon" src="icons/search.svg" alt="Search icon">
+                <!-- <span><input type="text" name="search" id="search" class="searchBar" placeholder="Type what you want to search..."></span> -->
+                <input type="text" name="search" id="search" class="searchBar" placeholder="Type what you want to search...">
+            </div>
+            <div class="nameBlock">
+                <img class="bellIcon" src="icons/bell.svg" alt="Notification icon">
+                <img class="nameIcon" src="icons/alpha-i-circle.png" alt="User Icon">
+                <div class="nameTopRight">Isabelle Finley</div>
+            </div>
+        </div>
+        <div class="profile">
+            <img class="avatar" src="icons/alpha-i-circle-lg.png" alt="User Icon">
+            <div class="greetingBlock">
+            <div class="greeting">Hi there,</div>
+            <div class="nameMid">Isabelle Finley (@isabelle)</div>
+            </div>
+            <div class="buttonRow">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="projects">
+                <h1>Your Projects</h1>
+                <div class="projectSpace">
+                    <div class="projectCard">
+                        <span class="projectTitle">Super Cool Project</span>
+                        <span class="projectDesc">Donec in rhoncus nunc. In fringilla, est eget feugiat auctor, 
+                            diam ligula ultrices urna, eget lacinia nisi ante semper magna.
+                        </span>
+                        <div class="projectIconBar">
+                            <div></div>
+                            <img src="icons/star.svg" alt="Star icon">
+                            <img src="icons/eye-off.svg" alt="Visibility icon">
+                            <img src="icons/share.svg" alt="Share icon">
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <span class="projectTitle">Less Cool Project</span>
+                        <span class="projectDesc">Pellentesque pharetra odio id sem scelerisque suscipit. 
+                            Donec vehicula quam a tellus finibus sodales. 
+                        </span>
+                        <div class="projectIconBar">
+                            <div></div>
+                            <img src="icons/star.svg" alt="Star icon">
+                            <img src="icons/eye-off.svg" alt="Visibility icon">
+                            <img src="icons/share.svg" alt="Share icon">
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <span class="projectTitle">Impossible App</span>
+                        <span class="projectDesc">Mauris vehicula eros in sapien tincidunt, ac tempus orci vehicula. 
+                            Aenean tempus maximus libero, sit amet facilisis enim porta in.
+                        </span>
+                        <div class="projectIconBar">
+                            <div></div>
+                            <img src="icons/star.svg" alt="Star icon">
+                            <img src="icons/eye-off.svg" alt="Visibility icon">
+                            <img src="icons/share.svg" alt="Share icon">
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <span class="projectTitle">Easy Peasy App</span>
+                        <span class="projectDesc">Duis lacus nulla, luctus id ipsum vel, condimentum laoreet orci. 
+                            Quisque elit est, blandit tincidunt posuere ut, euismod quis lorem.
+                        </span>
+                        <div class="projectIconBar">
+                            <div></div>
+                            <img src="icons/star.svg" alt="Star icon">
+                            <img src="icons/eye-off.svg" alt="Visibility icon">
+                            <img src="icons/share.svg" alt="Share icon">
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <span class="projectTitle">Ad Blocker</span>
+                        <span class="projectDesc">Donec facilisis, ligula eu eleifend sollicitudin, odio metus aliquet ex, 
+                            ut lobortis sapien justo id diam. 
+                        </span>
+                        <div class="projectIconBar">
+                            <div></div>
+                            <img src="icons/star.svg" alt="Star icon">
+                            <img src="icons/eye-off.svg" alt="Visibility icon">
+                            <img src="icons/share.svg" alt="Share icon">
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <span class="projectTitle">Money Maker</span>
+                        <span class="projectDesc">Duis nec est in urna tincidunt vulputate. Quisque lacinia blandit odio et 
+                            molestie. Quisque eu lectus id elit lacinia molestie.
+                        </span>
+                        <div class="projectIconBar">
+                            <div></div>
+                            <img src="icons/star.svg" alt="Star icon">
+                            <img src="icons/eye-off.svg" alt="Visibility icon">
+                            <img src="icons/share.svg" alt="Share icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feed">
+                <div class="announcements">
+                    <div class="feedHeader"><h1>Announcements</h1></div>
+                    <div class="announcementBlock">
+                        <div class="announcementItem">
+                            <div class="itemTitle">Site Maintenance</div>
+                            <div>We'll be shutting down the site for a couple of days next week.</div>
+                        </div>
+                        <div class="announcementItem">
+                            <div class="itemTitle">Community Share Day</div> 
+                            <div>Share your latest WIP with the community this Thursday!</div>  
+                        </div>
+                        <div class="announcementItem">
+                            <div class="itemTitle">Updated Privacy Policy</div>
+                            <div>Please take a moment to review our updated privacy policy.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="feedHeader"><h1>Trending</h1></div>
+                    <div class="trendingBlock">
+                        <div class="trendingItem">
+                            <div class="trendingIcon"><img src="icons/alpha-b-circle.png" alt="User icon: Ben"></div>
+                            <div class="trendingName">
+                                <div class="userTag">@Ben</div>
+                                <div class="userTitle">Baker of Breads</div>
+                            </div>
+                        </div>
+                        <div class="trendingItem">
+                            <div class="trendingIcon"><img src="icons/alpha-k-circle.png" alt="User icon: Kelly"></div>
+                            <div class="trendingName">
+                                <div class="userTag">@Kelly</div>
+                                <div class="userTitle">Rower of Rivers</div>
+                            </div>
+                        </div>
+                        <div class="trendingItem">
+                            <div class="trendingIcon"><img src="icons/alpha-j-circle.png" alt="User icon: Jane"></div>
+                            <div class="trendingName">
+                                <div class="userTag">@Jane</div>
+                                <div class="userTitle">Painter of Prints</div>
+                            </div>
+                        </div>
+                        <div class="trendingItem">
+                            <div class="trendingIcon"><img src="icons/alpha-i-circle.png" alt="User icon: Isabelle"></div>
+                            <div class="trendingName">
+                                <div class="userTag">@Isabelle</div>
+                                <div class="userTitle">Sewer of Suits</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
